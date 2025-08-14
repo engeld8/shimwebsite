@@ -203,7 +203,7 @@
             <li class="flex gap-3"><span class="h-9 w-9 rounded-lg bg-brand-soft grid place-items-center">📍</span> <div><div class="font-medium">Address</div><div class="text-slate-700">3484 Blvd. des Sources, Suite 244<br>Montreal, Quebec  H9B 1Z9</div></div></li>
           </ul>
         </div>
-        <form onsubmit="return sendMail(event)" class="rounded-xl2 border border-slate-200 p-6 shadow-sm bg-white">
+        <form name="contact" method="POST" data-netlify="true" class="rounded-xl2 border border-slate-200 p-6 shadow-sm bg-white">
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label class="text-sm font-medium">First Name</label>
@@ -238,7 +238,7 @@
               <textarea name="message" rows="4" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold" placeholder="Tell us about your project..."></textarea>
             </div>
             <div class="sm:col-span-2">
-              <button class="w-full rounded-md bg-brand-gold text-black font-semibold py-3 hover:brightness-95">Send Message</button>
+              <button type="submit" class="w-full rounded-md bg-brand-gold text-black font-semibold py-3 hover:brightness-95">Send Message</button>
             </div>
           </div>
         </form>
@@ -283,17 +283,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    function sendMail(e){
-      e.preventDefault();
-      const fd = new FormData(e.target);
-      const data = Object.fromEntries(fd.entries());
-      const subject = encodeURIComponent(`Project Inquiry: ${data.type || 'General'}`);
-      const body = encodeURIComponent(
-        `Name: ${data.first || ''} ${data.last || ''}\nEmail: ${data.email || ''}\nPhone: ${data.phone || ''}\nProject: ${data.type || ''}\n\n${data.message || ''}`
-      );
-      window.location.href = `mailto:info@shimbronze.com?subject=${subject}&body=${body}`;
-      return false;
-    }
   </script>
 </body>
 </html>
