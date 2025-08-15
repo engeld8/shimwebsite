@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shim Enterprises</title>
+  <meta name="description" content="Designers and manufacturers of donor walls, Trees of Life, memorial boards, plaques, and custom signs." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Google Fonts: DM Serif Text (headings/logotype) + Inter (paragraphs/buttons) -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#F4C147', // primary accent
+              dark: '#0F172A', // deep heading color
+              soft: '#fff7e6'  // pale gold tint
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+            serif: ['DM Serif Text', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+            display: ['DM Serif Text', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
+          },
+          boxShadow: {
+            card: '0 8px 24px rgba(15, 23, 42, 0.08)'
+          },
+          borderRadius: {
+            xl2: '1rem'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .highlight{position:relative;display:inline-block;padding:.05em .25em;line-height:1}
+    .highlight::before{content:"";position:absolute;inset:0 .1rem .2rem .1rem;background:#F4C14733;border-radius:.35rem;z-index:-1}
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Top Bar / Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between gap-4">
+        <a href="#top" class="flex items-center gap-3">
+          <!-- Replace src with your logo path -->
+          <img src="img/SE Gold 1.png" alt="Shim Enterprises logo" class="h-9 w-9 object-contain rounded" />
+          <div class="leading-none">
+            <span class="block text-xl font-display tracking-tight text-brand-dark">SHIM <span class="text-brand-gold">ENTERPRISES</span></span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-[15px]">
+          <a href="#products" class="hover:text-brand-dark">Products</a>
+          <a href="#gallery" class="hover:text-brand-dark">Gallery</a>
+          <a href="#contact" class="hover:text-brand-dark">Contact</a>
+          <a href="yahrzeit-form.html" class="hover:text-brand-dark">Yahrzeit Form</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <!-- Removed header Contact button per request -->
+          <a href="https://shimorders.netlify.app" class="inline-flex items-center rounded-md bg-brand-gold text-black px-3.5 py-2 font-semibold text-sm shadow hover:brightness-95">Customer Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-12 sm:py-16">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl tracking-tight text-brand-dark">
+            Crafting <span class="text-brand-gold">Lasting</span> Tributes Since 1982
+          </h1>
+          <p class="mt-4 text-slate-700 max-w-xl">Designers and manufacturers of premium donor walls, memorial boards, plaques, and custom signage that honour achievements and preserve memories.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#gallery" class="inline-flex items-center rounded-md bg-brand-gold text-black px-5 py-3 font-semibold shadow hover:brightness-95">View Gallery</a>
+            <a href="#contact" class="inline-flex items-center rounded-md border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-50">Contact Us</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-xl2 overflow-hidden shadow-card border border-slate-200">
+            <!-- Replace with your hero image -->
+            <img src="img/Hero Donor.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-12 sm:py-16">
+      <div class="text-center">
+        <h2 class="font-display text-2xl sm:text-3xl text-brand-dark">Our Premium Products</h2>
+        <p class="mt-2 text-slate-700">Expertly crafted recognition solutions for every occasion</p>
+      </div>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Card template -->
+        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+          <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🏛️</div>
+          <h3 class="mt-4 font-display text-lg">Donor Walls</h3>
+          <p class="mt-1 text-slate-700 text-sm">Custom-designed recognition walls that celebrate philanthropic contributions with elegance and permanence.</p>
+        </article>
+        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+          <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🌳</div>
+          <h3 class="mt-4 font-display text-lg">Trees of Life</h3>
+          <p class="mt-1 text-slate-700 text-sm">Symbolic memorial displays that honor loved ones through beautiful, artistic tree designs.</p>
+        </article>
+        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+          <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🕯️</div>
+          <h3 class="mt-4 font-display text-lg">Memorial Boards</h3>
+          <p class="mt-1 text-slate-700 text-sm">Bronze memorial boards that provide dignified remembrance for cherished loved ones.</p>
+        </article>
+        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+          <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🏅</div>
+          <h3 class="mt-4 font-display text-lg">Plaques</h3>
+          <p class="mt-1 text-slate-700 text-sm">Awards, dedications, and commemorative plaques in bronze, aluminum, acrylic, glass, and other materials.</p>
+        </article>
+        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+          <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🪧</div>
+          <h3 class="mt-4 font-display text-lg">Custom Signs</h3>
+          <p class="mt-1 text-slate-700 text-sm">Professional signage solutions for businesses, institutions, and special events.</p>
+        </article>
+        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+          <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">💬</div>
+          <h3 class="mt-4 font-display text-lg">Consultation</h3>
+          <p class="mt-1 text-slate-700 text-sm">Expert design consultation to bring your vision to life with precision and care.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-12 sm:py-16">
+      <div class="text-center">
+        <h2 class="font-display text-2xl sm:text-3xl text-brand-dark">Our Work Gallery</h2>
+        <p class="mt-2 text-slate-700">Explore our portfolio of exceptional craftsmanship</p>
+      </div>
+
+      <div class="mt-8 space-y-8">
+        <!-- Row block -->
+        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+          <h3 class="px-1 pb-3 font-display">Donor Walls</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Donor Walls/DonorWall1.jpg" alt="Donor wall example 1" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Donor Walls/DonorWall2.jpg" alt="Donor wall example 2" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Donor Walls/DonorWall3.jpg" alt="Donor wall example 3" />
+          </div>
+        </div>
+
+        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+          <h3 class="px-1 pb-3 font-display">Trees of Life</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Trees/Tree1.jpg" alt="Tree of life 1" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Trees/Tree2.jpg" alt="Tree of life 2" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Trees/Tree3.jpg" alt="Tree of life 3" />
+          </div>
+        </div>
+
+        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+          <h3 class="px-1 pb-3 font-display">Memorial Boards</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Memorial Boards/MemorialBoard1.jpg" alt="Memorial board 1" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Memorial Boards/MemorialBoard2.jpg" alt="Memorial board 2" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Memorial Boards/MemorialBoard3.jpg" alt="Memorial board 3" />
+          </div>
+        </div>
+
+        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+          <h3 class="px-1 pb-3 font-display">Plaques</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Bronze Plaques/BronzePlaque1.jpg" alt="Plaque 1" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Bronze Plaques/BronzePlaque2.jpg" alt="Plaque 2" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Bronze Plaques/BronzePlaque3.jpg" alt="Plaque 3" />
+          </div>
+        </div>
+
+        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+          <h3 class="px-1 pb-3 font-display">Etched Plaques</h3>
+          <div class="grid md:grid-cols-3 gap-4">
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Etched Plaques/EtchedPlaque1.jpg" alt="Etched Plaque 1" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Etched Plaques/EtchedPlaque2.jpg" alt="Etched Plaque 2" />
+            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Etched Plaques/EtchedPlaque3.jpg" alt="Etched Plaque 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 sm:py-16">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div>
+          <h2 class="font-display text-2xl sm:text-3xl text-brand-dark">Get In Touch</h2>
+          <p class="mt-2 text-slate-700 max-w-lg">Ready to create something meaningful? Contact us for a consultation and let's bring your vision to life.</p>
+          <ul class="mt-6 space-y-4 text-slate-700">
+            <li class="flex gap-3"><span class="h-9 w-9 rounded-lg bg-brand-soft grid place-items-center">📞</span> <div><div class="font-medium">Phone</div><div class="text-slate-700">(514) 738-7446</div></div></li>
+            <li class="flex gap-3"><span class="h-9 w-9 rounded-lg bg-brand-soft grid place-items-center">✉️</span> <div><div class="font-medium">Email</div><div class="text-slate-700">info@shimbronze.com</div></div></li>
+            <li class="flex gap-3"><span class="h-9 w-9 rounded-lg bg-brand-soft grid place-items-center">📍</span> <div><div class="font-medium">Address</div><div class="text-slate-700">3484 Blvd. des Sources, Suite 244<br>Montreal, Quebec  H9B 1Z9</div></div></li>
+          </ul>
+        </div>
+        <form name="contact" method="POST" data-netlify="true" class="rounded-xl2 border border-slate-200 p-6 shadow-sm bg-white">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-medium">First Name</label>
+              <input required type="text" name="first" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Last Name</label>
+              <input required type="text" name="last" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Email</label>
+              <input required type="email" name="email" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Phone</label>
+              <input type="tel" name="phone" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Project Type</label>
+              <select name="type" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold">
+                <option value="">Select a project type</option>
+                <option>Donor Wall</option>
+                <option>Tree of Life</option>
+                <option>Memorial Board</option>
+                <option>Plaques</option>
+                <option>Custom Signs</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Message</label>
+              <textarea name="message" rows="4" class="mt-1 w-full rounded-md border border-slate-300 focus:border-brand-gold focus:ring-brand-gold" placeholder="Tell us about your project..."></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="w-full rounded-md bg-brand-gold text-black font-semibold py-3 hover:brightness-95">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3">
+            <img src="img/SE Gold 1.png" alt="Shim Enterprises logo" class="h-9 w-9 object-contain" />
+            <span class="text-xl font-display">SHIM <span class="text-brand-gold">ENTERPRISES</span></span>
+          </div>
+          <p class="mt-3 text-slate-300 max-w-md">Crafting lasting tributes and recognition solutions since 1985.</p>
+        </div>
+        <div>
+          <h4 class="font-display">Quick Links</h4>
+          <ul class="mt-3 space-y-2 text-slate-300">
+            <li><a class="hover:text-white" href="#products">Products</a></li>
+            <li><a class="hover:text-white" href="#gallery">Gallery</a></li>
+            <li><a class="hover:text-white" href="#contact">Contact</a></li>
+            <li><a class="hover:text-white" href="yahrzeit-form.html">Yahrzeit Form</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display">Contact Info</h4>
+          <ul class="mt-3 space-y-2 text-slate-300">
+            <li>(514) 738-7446</li>
+            <li>info@shimbronze.com</li>
+            <li>3484 Blvd. des Sources, Suite 244<br>Montreal, Quebec  H9B 1Z9</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-slate-400">© <span id="year"></span> Shim Enterprises. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Help button removed per request -->
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
