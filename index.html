@@ -12,6 +12,9 @@
   <!-- Google Fonts: DM Serif Text (headings/logotype) + Inter (paragraphs/buttons) -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -147,45 +150,144 @@
         <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Donor Walls</h3>
           <div class="grid md:grid-cols-3 gap-4">
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Donor Walls/DonorWall1.jpg" alt="Donor wall example 1" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Donor Walls/DonorWall2.jpg" alt="Donor wall example 2" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Donor Walls/DonorWall3.jpg" alt="Donor wall example 3" />
+            <a href="img/Donor Walls/DonorWall1.jpg" class="glightbox" data-gallery="donor-walls">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Donor Walls/DonorWall1.jpg" alt="Donor wall example 1" />
+            </a>
+            <a href="img/Donor Walls/DonorWall2.jpg" class="glightbox" data-gallery="donor-walls">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Donor Walls/DonorWall2.jpg" alt="Donor wall example 2" />
+            </a>
+            <a href="img/Donor Walls/DonorWall3.jpg" class="glightbox" data-gallery="donor-walls">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Donor Walls/DonorWall3.jpg" alt="Donor wall example 3" />
+            </a>
+            <!-- Hidden images for lightbox only -->
+            <a href="img/Donor Walls/DonorWall4.png" class="glightbox hidden" data-gallery="donor-walls" id="donor-walls-more"></a>
+            <a href="img/Donor Walls/DonorWall5.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall6.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall7.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall8.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall9.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall10.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall11.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall12.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall13.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall14.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall15.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall16.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall17.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall18.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+            <a href="img/Donor Walls/DonorWall19.png" class="glightbox hidden" data-gallery="donor-walls"></a>
+          </div>
+          <div class="mt-3 text-center">
+            <a href="#donor-walls-more" class="inline-flex items-center text-brand-dark hover:text-brand-gold font-medium text-sm transition-colors" onclick="document.getElementById('donor-walls-more').click(); return false;">
+              View more <span class="ml-1">→</span>
+            </a>
           </div>
         </div>
 
         <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Trees of Life</h3>
           <div class="grid md:grid-cols-3 gap-4">
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Trees/Tree1.jpg" alt="Tree of life 1" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Trees/Tree2.jpg" alt="Tree of life 2" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Trees/Tree3.jpg" alt="Tree of life 3" />
+            <a href="img/Trees/Tree1.jpg" class="glightbox" data-gallery="trees">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Trees/Tree1.jpg" alt="Tree of life 1" />
+            </a>
+            <a href="img/Trees/Tree2.jpg" class="glightbox" data-gallery="trees">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Trees/Tree2.jpg" alt="Tree of life 2" />
+            </a>
+            <a href="img/Trees/Tree3.jpg" class="glightbox" data-gallery="trees">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Trees/Tree3.jpg" alt="Tree of life 3" />
+            </a>
+            <!-- Hidden images for lightbox only -->
+            <a href="img/Trees/Tree4.png" class="glightbox hidden" data-gallery="trees" id="trees-more"></a>
+            <a href="img/Trees/Tree5.png" class="glightbox hidden" data-gallery="trees"></a>
+            <a href="img/Trees/Tree6.png" class="glightbox hidden" data-gallery="trees"></a>
+            <a href="img/Trees/Tree7.png" class="glightbox hidden" data-gallery="trees"></a>
+            <a href="img/Trees/Tree8.png" class="glightbox hidden" data-gallery="trees"></a>
+            <a href="img/Trees/Tree9.png" class="glightbox hidden" data-gallery="trees"></a>
+            <a href="img/Trees/Tree10.png" class="glightbox hidden" data-gallery="trees"></a>
+            <a href="img/Trees/Tree11.png" class="glightbox hidden" data-gallery="trees"></a>
+          </div>
+          <div class="mt-3 text-center">
+            <a href="#trees-more" class="inline-flex items-center text-brand-dark hover:text-brand-gold font-medium text-sm transition-colors" onclick="document.getElementById('trees-more').click(); return false;">
+              View more <span class="ml-1">→</span>
+            </a>
           </div>
         </div>
 
         <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Memorial Boards</h3>
           <div class="grid md:grid-cols-3 gap-4">
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Memorial Boards/MemorialBoard1.jpg" alt="Memorial board 1" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Memorial Boards/MemorialBoard2.jpg" alt="Memorial board 2" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Memorial Boards/MemorialBoard3.jpg" alt="Memorial board 3" />
+            <a href="img/Memorial Boards/MemorialBoard1.jpg" class="glightbox" data-gallery="memorial-boards">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Memorial Boards/MemorialBoard1.jpg" alt="Memorial board 1" />
+            </a>
+            <a href="img/Memorial Boards/MemorialBoard2.jpg" class="glightbox" data-gallery="memorial-boards">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Memorial Boards/MemorialBoard2.jpg" alt="Memorial board 2" />
+            </a>
+            <a href="img/Memorial Boards/MemorialBoard3.jpg" class="glightbox" data-gallery="memorial-boards">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Memorial Boards/MemorialBoard3.jpg" alt="Memorial board 3" />
+            </a>
+            <!-- Hidden images for lightbox only -->
+            <a href="img/Memorial Boards/MemorialBoard4.png" class="glightbox hidden" data-gallery="memorial-boards" id="memorial-boards-more"></a>
+            <a href="img/Memorial Boards/MemorialBoard5.png" class="glightbox hidden" data-gallery="memorial-boards"></a>
+            <a href="img/Memorial Boards/MemorialBoard6.png" class="glightbox hidden" data-gallery="memorial-boards"></a>
+          </div>
+          <div class="mt-3 text-center">
+            <a href="#memorial-boards-more" class="inline-flex items-center text-brand-dark hover:text-brand-gold font-medium text-sm transition-colors" onclick="document.getElementById('memorial-boards-more').click(); return false;">
+              View more <span class="ml-1">→</span>
+            </a>
           </div>
         </div>
 
         <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Plaques</h3>
           <div class="grid md:grid-cols-3 gap-4">
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Bronze Plaques/BronzePlaque1.jpg" alt="Plaque 1" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Bronze Plaques/BronzePlaque2.jpg" alt="Plaque 2" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Bronze Plaques/BronzePlaque3.jpg" alt="Plaque 3" />
+            <a href="img/Bronze Plaques/BronzePlaque1.jpg" class="glightbox" data-gallery="plaques">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Bronze Plaques/BronzePlaque1.jpg" alt="Plaque 1" />
+            </a>
+            <a href="img/Bronze Plaques/BronzePlaque2.jpg" class="glightbox" data-gallery="plaques">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Bronze Plaques/BronzePlaque2.jpg" alt="Plaque 2" />
+            </a>
+            <a href="img/Bronze Plaques/BronzePlaque3.jpg" class="glightbox" data-gallery="plaques">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Bronze Plaques/BronzePlaque3.jpg" alt="Plaque 3" />
+            </a>
+            <!-- Hidden images for lightbox only -->
+            <a href="img/Bronze Plaques/BronzePlaque4.png" class="glightbox hidden" data-gallery="plaques" id="plaques-more"></a>
+            <a href="img/Bronze Plaques/BronzePlaque5.png" class="glightbox hidden" data-gallery="plaques"></a>
+            <a href="img/Bronze Plaques/BronzePlaque6.png" class="glightbox hidden" data-gallery="plaques"></a>
+            <a href="img/Bronze Plaques/BronzePlaque7.png" class="glightbox hidden" data-gallery="plaques"></a>
+            <a href="img/Bronze Plaques/BronzePlaque8.png" class="glightbox hidden" data-gallery="plaques"></a>
+            <a href="img/Bronze Plaques/BronzePlaque9.png" class="glightbox hidden" data-gallery="plaques"></a>
+          </div>
+          <div class="mt-3 text-center">
+            <a href="#plaques-more" class="inline-flex items-center text-brand-dark hover:text-brand-gold font-medium text-sm transition-colors" onclick="document.getElementById('plaques-more').click(); return false;">
+              View more <span class="ml-1">→</span>
+            </a>
           </div>
         </div>
 
         <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Etched Plaques</h3>
           <div class="grid md:grid-cols-3 gap-4">
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Etched Plaques/EtchedPlaque1.jpg" alt="Etched Plaque 1" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Etched Plaques/EtchedPlaque2.jpg" alt="Etched Plaque 2" />
-            <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover" src="img/Etched Plaques/EtchedPlaque3.jpg" alt="Etched Plaque 3" />
+            <a href="img/Etched Plaques/EtchedPlaque1.jpg" class="glightbox" data-gallery="etched-plaques">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Etched Plaques/EtchedPlaque1.jpg" alt="Etched Plaque 1" />
+            </a>
+            <a href="img/Etched Plaques/EtchedPlaque2.jpg" class="glightbox" data-gallery="etched-plaques">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Etched Plaques/EtchedPlaque2.jpg" alt="Etched Plaque 2" />
+            </a>
+            <a href="img/Etched Plaques/EtchedPlaque3.jpg" class="glightbox" data-gallery="etched-plaques">
+              <img class="rounded-lg shadow-sm border border-slate-200 h-44 w-full object-cover cursor-pointer hover:opacity-90 transition-opacity" src="img/Etched Plaques/EtchedPlaque3.jpg" alt="Etched Plaque 3" />
+            </a>
+            <!-- Hidden images for lightbox only -->
+            <a href="img/Etched Plaques/EtchedPlaque4.png" class="glightbox hidden" data-gallery="etched-plaques" id="etched-plaques-more"></a>
+            <a href="img/Etched Plaques/EtchedPlaque5.png" class="glightbox hidden" data-gallery="etched-plaques"></a>
+            <a href="img/Etched Plaques/EtchedPlaque6.png" class="glightbox hidden" data-gallery="etched-plaques"></a>
+            <a href="img/Etched Plaques/EtchedPlaque7.png" class="glightbox hidden" data-gallery="etched-plaques"></a>
+            <a href="img/Etched Plaques/EtchedPlaque8.png" class="glightbox hidden" data-gallery="etched-plaques"></a>
+            <a href="img/Etched Plaques/EtchedPlaque9.png" class="glightbox hidden" data-gallery="etched-plaques"></a>
+          </div>
+          <div class="mt-3 text-center">
+            <a href="#etched-plaques-more" class="inline-flex items-center text-brand-dark hover:text-brand-gold font-medium text-sm transition-colors" onclick="document.getElementById('etched-plaques-more').click(); return false;">
+              View more <span class="ml-1">→</span>
+            </a>
           </div>
         </div>
       </div>
@@ -281,8 +383,20 @@
 
   <!-- Floating Help button removed per request -->
 
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Initialize GLightbox
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true,
+      closeButton: true,
+      zoomable: true,
+      draggable: true
+    });
   </script>
 </body>
 </html>
