@@ -46,6 +46,7 @@
   <style>
     .highlight{position:relative;display:inline-block;padding:.05em .25em;line-height:1}
     .highlight::before{content:"";position:absolute;inset:0 .1rem .2rem .1rem;background:#F4C14733;border-radius:.35rem;z-index:-1}
+    [id^="gallery-"]{scroll-margin-top:5rem}
   </style>
 </head>
 <body class="font-sans text-slate-800 bg-white">
@@ -105,36 +106,36 @@
       </div>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- Card template -->
-        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+        <a href="#gallery-donor-walls" class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow cursor-pointer block">
           <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🏛️</div>
           <h3 class="mt-4 font-display text-lg">Donor Walls</h3>
           <p class="mt-1 text-slate-700 text-sm">Custom-designed recognition walls that celebrate philanthropic contributions with elegance and permanence.</p>
-        </article>
-        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+        </a>
+        <a href="#gallery-trees" class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow cursor-pointer block">
           <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🌳</div>
           <h3 class="mt-4 font-display text-lg">Trees of Life</h3>
           <p class="mt-1 text-slate-700 text-sm">Symbolic memorial displays that honor loved ones through beautiful, artistic tree designs.</p>
-        </article>
-        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+        </a>
+        <a href="#gallery-memorial-boards" class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow cursor-pointer block">
           <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🕯️</div>
           <h3 class="mt-4 font-display text-lg">Memorial Boards</h3>
           <p class="mt-1 text-slate-700 text-sm">Bronze memorial boards that provide dignified remembrance for cherished loved ones.</p>
-        </article>
-        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+        </a>
+        <a href="#gallery-plaques" class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow cursor-pointer block">
           <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🏅</div>
           <h3 class="mt-4 font-display text-lg">Plaques</h3>
           <p class="mt-1 text-slate-700 text-sm">Awards, dedications, and commemorative plaques in bronze, aluminum, acrylic, glass, and other materials.</p>
-        </article>
-        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+        </a>
+        <a href="#contact" class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow cursor-pointer block">
           <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">🪧</div>
           <h3 class="mt-4 font-display text-lg">Custom Signs</h3>
           <p class="mt-1 text-slate-700 text-sm">Professional signage solutions for businesses, institutions, and special events.</p>
-        </article>
-        <article class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow">
+        </a>
+        <a href="#contact" class="rounded-xl2 border border-slate-200 bg-white p-6 shadow-sm hover:shadow-card transition-shadow cursor-pointer block">
           <div class="h-10 w-10 grid place-items-center rounded-full bg-brand-soft text-brand-dark font-semibold">💬</div>
           <h3 class="mt-4 font-display text-lg">Consultation</h3>
           <p class="mt-1 text-slate-700 text-sm">Expert design consultation to bring your vision to life with precision and care.</p>
-        </article>
+        </a>
       </div>
     </section>
 
@@ -147,7 +148,7 @@
 
       <div class="mt-8 space-y-8">
         <!-- Row block -->
-        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+        <div id="gallery-donor-walls" class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Donor Walls</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <a href="img/Donor Walls/DonorWall1.jpg" class="glightbox" data-gallery="donor-walls">
@@ -184,7 +185,7 @@
           </div>
         </div>
 
-        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+        <div id="gallery-trees" class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Trees of Life</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <a href="img/Trees/Tree1.jpg" class="glightbox" data-gallery="trees">
@@ -213,7 +214,7 @@
           </div>
         </div>
 
-        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+        <div id="gallery-memorial-boards" class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Memorial Boards</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <a href="img/Memorial Boards/MemorialBoard1.jpg" class="glightbox" data-gallery="memorial-boards">
@@ -237,7 +238,7 @@
           </div>
         </div>
 
-        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+        <div id="gallery-plaques" class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Plaques</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <a href="img/Bronze Plaques/BronzePlaque1.jpg" class="glightbox" data-gallery="plaques">
@@ -264,7 +265,7 @@
           </div>
         </div>
 
-        <div class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
+        <div id="gallery-etched-plaques" class="rounded-xl2 border border-slate-200 bg-slate-50 p-5">
           <h3 class="px-1 pb-3 font-display">Etched Plaques</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <a href="img/Etched Plaques/EtchedPlaque1.jpg" class="glightbox" data-gallery="etched-plaques">
